@@ -59,13 +59,13 @@ class _HomePageState extends State<HomePage> {
                   mainAxisSpacing: 16,
                   crossAxisCount: 2,
                   children:
-                  controller.quizzes.map((e) =>
-                      QuizCardWidget(
-                        title: e.title,
-                        completed: '${e.questionAnswered}/${e.questions
-                            .length}',
-                        percent: e.questionAnswered / e.questions.length,
-                      )).toList(),
+                  controller.quizzes.map((e) => QuizCardWidget(
+                    title: e.title,
+                    completed: '${e.questionAnswered}/${e.questions
+                        .length}',
+                    percent: e.questionAnswered / e.questions.length,
+                  )).toList(),
+                      
                 ),
               ),
             ],
